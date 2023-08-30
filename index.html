@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style.css">
+  <link rel="shortcut icon" href="Suporte/icons8-user-100.ico" type="image/x-icon">
+  <title>Login</title>
+</head>
+<body>
+
+ <form>
+
+   <div class="card-login">
+
+    <h1>LOGIN<br></h1>
+     <div class="textfield">
+      <label for="usuario">Usuário</label>
+      <input type="text" name="usuario" placeholder="Usuário" id="login">
+     </div>
+     <div class="textfield">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" placeholder="Senha" id="senha">
+     </div>
+     <input type="submit" onclick="logar(); return false">
+
+   </div>
+
+ </form>
+
+
+<script>
+
+  function logar(){
+    
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('senha').value;
+
+
+      if(login == "admin" && senha == "admin"){
+         location.href = "home.html";
+      }else{
+        alert("Usuário ou senha incorretos");
+      }
+
+      }
+
+
+
+    
+  
+
+
+
+
+
+
+
+
+
+</script>
+
+  
+ 
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+body{
+  height: 100vh;
+}
+
+nav.menu-lateral{
+  width: 80px;
+  height: 100%;
+  background-color:#40434c;
+  padding: 40px 0 40px 1%;
+  box-shadow: 3px 0 0 #9fb0b9;
+  padding-left: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+  width: 250px;
+  padding-left: 0%;
+}
+
+.btn-expandir{
+  width: 100%;
+  padding-left: 7px;
+}
+
+.btn-expandir >i{
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 11px;
+  
+}
+
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu{
+  position: relative;
+  list-style: none;
+  transition: all 0.2s ease;
+}
+
+ul li.ativo{
+  background-color: #9fb0b9;
+}
+
+ul li.item-menu:hover{
+  background: #9fb0b9;
+}
+
+ul li.item-menu a{
+  color:#fff;
+  text-decoration: none;
+  font-size:20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 2px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .text-link{
+  margin-left: 70px;
+  transition: .5s;
+  opacity: 0;
+}
+
+nav.menu-lateral.expandir .text-link{
+  margin-left: 40px;
+  opacity: 1;
+
+}
+
+ul li.item-menu a .icon > i{
+  font-size: 25px;
+  margin-left: 22px;
+  margin-right: 0;
+}
+
